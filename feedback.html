@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Зворотній зв'язок — Простір Новин</title>
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo"><span class="word1">ПРОСТІР</span><span class="word2">НОВИН</span></a>
+  <p class="tagline">Зворотній зв'язок</p>
+</header>
+
+<div class="layout">
+  <main>
+    <h2>Напишіть нам</h2>
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Персональна інформація</legend>
+        <table class="form-table">
+          <tr>
+            <th><label for="fullname">Прізвище та ім'я</label></th>
+            <td><input type="text" id="fullname" name="fullname" required></td>
+          </tr>
+          <tr>
+            <th><label for="email">E-mail</label></th>
+            <td><input type="email" id="email" name="email" required></td>
+          </tr>
+          <tr>
+            <th><label for="age">Вік</label></th>
+            <td><input type="number" id="age" name="age" min="1" max="120"></td>
+          </tr>
+          <tr>
+            <th>Освіта</th>
+            <td class="radio-group">
+              <label><input type="radio" name="education" value="full"> Повна</label>
+              <label><input type="radio" name="education" value="incomplete"> Неповна</label>
+              <label><input type="radio" name="education" value="higher"> Вища</label>
+              <label><input type="radio" name="education" value="professional"> Професійна</label>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <div class="field">
+        <label for="purpose">Мета зворотного зв'язку</label>
+        <select id="purpose" name="purpose">
+          <option value="cooperation">Співпраця</option>
+          <option value="complaint">Скарга на порушення права власності</option>
+          <option value="proposal">Пропозиція</option>
+          <option value="bug">Наявність помилки</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="details">Детально</label>
+        <textarea id="details" name="details" rows="5" cols="40" maxlength="500"></textarea>
+      </div>
+
+      <div class="field checkbox-line">
+        <label><input type="checkbox" name="consent" required> Я погоджуюсь на обробку персональних даних</label>
+      </div>
+
+      <button type="submit" class="btn purple">Надіслати</button>
+    </form>
+
+    <p>
+      <button type="button" class="btn gray" onclick="window.location.href='index.html';">На головну</button>
+    </p>
+  </main>
+</div>
+
+<footer>
+  <p>Адреса редакції: вул. Володимирська, 42, м. Київ, 01001, Україна</p>
+  <p>&copy; 2026 Новинний портал «Простір Новин». Усі права захищено.</p>
+</footer>
+
+</body>
+</html>
